@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+
+@layer base {
+
+  @font-face {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    src: local(""), url("../fonts/lato-light.woff") format("woff"), url("../fonts/lato-light.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: Lato;
+    font-style: italic;
+    font-weight: 300;
+    src: local(""), url("../fonts/lato-light-italic.woff") format("woff"), url("../fonts/lato-light-italic.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 700;
+    src: local(""), url("../fonts/lato-bold.woff") format("woff"), url("../fonts/lato-bold.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: Lato;
+    font-style: italic;
+    font-weight: 700;
+    src: local(""), url("../fonts/lato-bold-italic.woff") format("woff"), url("../fonts/lato-bold-italic.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    src: local(""), url("../fonts/lato-black.woff") format("woff"), url("../fonts/lato-black.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: Lato;
+    font-style: italic;
+    font-weight: 900;
+    src: local(""), url("../fonts/lato-black-italic.woff") format("woff"), url("../fonts/lato-black-italic.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Holtwood One SC";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""), url("../fonts/holtwood-one-sc-regular.ttf") format("truetype");
+  }
+
+  body{
+    @apply font-sans text-base leading-6 font-normal;
+  }
+  h2{
+    @apply w-full mb-4 text-1xl sm:text-lg;
+  }
+  h3{
+    @apply mb-2.5 text-2xl text-white;
+  }
+  hr{
+    @apply w-full mt-10 mb-10 h-0.75 bg-hr border-0;
+  }
+}
+
+@layer components {
+
+  .menu-ul.show {
+    @apply left-0 bg-black transition-all duration-300 ease-linear;
+  }
+
+  .menu-list{
+    @apply  flex flex-col pb-5 pl-11 my-6 text-xxs leading-6 uppercase border-b-2 border-gray-600 border-solid sm:pl-7;
+  }
+
+  .menu-link{
+    @apply  text-white text-base py-1 px-2 hover:text-corporate-color-blue sm:text-xxs;
+  }
+
+  .br-1.animation {
+    @apply transition duration-500 ease-in-out transform -translate-x-1 translate-y-1.5;
+  }
+
+  .br-2.animation{
+    @apply opacity-0;
+  }
+
+  .br-3.animation {
+    @apply  transition duration-500 ease-in-out transform -translate-x-1 -translate-y-1.5;
+  }
+
+  .carrousel-list{
+    @apply relative float-left;
+  }
+
+  .carrousel-paragraph{
+    @apply absolute bg-black text-white w-3/12 text-sm p-7 right-11 bottom-14 lg:w-4/12 lg:text-base md:right-0 md:bottom-0 md:w-auto md:text-xs md:text-center md:opacity-80 md:mb-0 md:pt-8 md:pb-24 md:px-8;
+  }
+
+  .carrousel-label{
+    @apply flex flex-col float-left w-4 h-4 rounded-full m-1.5 border-2 border-solid border-white cursor-pointer;
+  }
+
+  #radio-1:checked ~ .slides {
+    @apply left-0;
+  }
+
+  #radio-2:checked ~ .slides {
+    @apply -left-full;
+  }
+
+  #radio-3:checked ~ .slides {
+    @apply -left-4/2;
+  }
+
+  #radio-1:checked ~ .slides-navigation label#dotForRadio-1,
+  #radio-2:checked ~ .slides-navigation label#dotForRadio-2,
+  #radio-3:checked ~ .slides-navigation label#dotForRadio-3 {
+  @apply bg-white;
+  }
+
+  .notice-list{
+    @apply pl-1 list-circle;
+  }
+  .footer-link{
+    @apply hover:text-corporate-color-blue transition duration-500;
+  }
+} 
+
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
+@tailwind utilities;

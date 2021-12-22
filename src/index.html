@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./assets/styles/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- header -->
+  <header class="absolute z-20">
+    <nav class="fixed w-screen bg-nav h-20">
+      <a href="index.html" class="absolute left-11 mt-4 sm:left-6">
+        <p
+          class="relative z-10 pt-3 pb-3 pr-3.5 pl-3.5 text-white bg-black text-md hover:text-black hover:bg-logo transition duration-500">
+          新しい学校のリーダーズ</p>
+      </a>
+      <ul class="menu-ul fixed -left-full w-2/6 h-screen pt-32 pl-0 lg:w-6/12 md:w-7/12 sm:w-2/3">
+        <li class="menu-list sm:mt-12"><a href="index.html" class="menu-link">Inicio</a></li>
+        <li class="menu-list"><a href="noticias.html" class="menu-link">Noticias</a></li>
+        <li class="menu-list"><a href="#" class="menu-link">Discografía</a></li>
+        <li class="menu-list"><a href="#" class="menu-link">Sobre nosotras</a></li>
+        <li class="menu-list"><a href="#" class="menu-link">Contacto</a></li>
+      </ul>
+      <button
+        class="menu-ham absolute top-0 bottom-0 right-11 block cursor-pointer transform -rotate-30 md:right-6 sm:right-6"
+        type="button">
+        <span class="br-1 flex flex-col bg-black w-7 h-1 mr-auto ml-auto my-1.5"></span>
+        <span class="br-2 flex flex-col bg-black w-5 h-1 mr-auto ml-auto my-1.5"></span>
+        <span class="br-3 flex flex-col bg-black w-7 h-1 mr-auto ml-auto my-1.5"></span>
+      </button>
+    </nav>
+  </header>
+  <!-- Css Carousel-->
+
+  <section class="relative w-screen h-screen overflow-hidden bg-white">
+    <input type="radio" name="slides" id="radio-1" class="hidden">
+    <input type="radio" name="slides" id="radio-2" class="hidden">
+    <input type="radio" name="slides" id="radio-3" class="hidden">
+    <ul class="slides relative w-6/2 p-0 overflow-hidden list-none transition ease-out duration-700">
+      <li class="carrousel-list">
+        <p class="carrousel-paragraph">Uniformes escolares y excentricidad que destacan con la individualidad y la
+          libertad de una sociedad
+          intolerante en una era en la que solo acepta a los modelos. Pop, jazz, hip-hop y rock acompasados con
+          energía punk y frenéticos movimientos de baile.</p>
+        <img src="./assets/images/atarashii-carrousel-1.jpg" alt="carrousel atarashii gakko" loading="lazy"
+          class="w-screen h-screen object-cover">
+      </li>
+      <li class="carrousel-list">
+        <p class="carrousel-paragraph">Somos un grupo de danza y actuación vocal formado en 2015 en Japón. Desde
+          entonces, hemos continuado
+          realizando actividades en vivo por todo el país, y en enero de 2021, hicimos nuestro debut mundial en
+          Estados Unidos con la empresa 88rising.</p>
+        <img src="./assets/images/atarashii-carrousel-2.webp" alt="carrousel atarashii gakko" loading="lazy"
+          class=" w-screen h-screen object-cover">
+      </li>
+      <li class="carrousel-list">
+        <p class="carrousel-paragraph"><b>NAINAINAI</b>, la canción que usamos para nuestro debut mundial, es una
+          canción que expresa los
+          sentimientos por la vida escolar y las preguntas que uno se hace a sí mismo.
+        </p>
+        <img src="./assets/images/atarashii-carrousel-3.webp" alt="carrousel atarashii gakko" loading="lazy"
+          class="w-screen h-screen object-cover">
+      </li>
+    </ul>
+    <div class="slides-navigation absolute right-0 left-0 m-auto w-21 bottom-8 transform scale-100 md:scale-90">
+      <label for="radio-1" id="dotForRadio-1" class="carrousel-label"></label>
+      <label for="radio-2" id="dotForRadio-2" class="carrousel-label"></label>
+      <label for="radio-3" id="dotForRadio-3" class="carrousel-label"></label>
+    </div>
+  </section>
+
+  <section class="flex flex-wrap w-96vw pt-10 m-auto">
+    <article class="flex w-3/12 p-3.5 mb-4 lg:w-2/6 md:w-6/12 sm:w-full">
+
+      <div
+        class="flex flex-col w-full overflow-hidden bg-black rounded transition duration-500 ease-in-out hover:cursor-pointer transform hover:scale-102">
+        <div class="bg-card-image-flex-a relative overflow-hidden bg-no-repeat bg-center bg-cover md:h-72">
+          <div
+            class="pt-28 pb-28 text-center z-10 bg-hover-card opacity-0 transition duration-700 ease-in-out hover:opacity-100 md:absolute md:bottom-0 md:w-full md:opacity-100 md:bg-social-media md:pb-3 md:pt-3 md:duration-0">
+            <a href="https://twitter.com/suzuka3sister"><i
+                class="fab fa-twitter h-auto text-4xl text-white pr-3 transition duration-700 ease-in-out hover:text-corporate-color-blue md:text-3xl"></i></a>
+            <a href="https://www.instagram.com/suzuka_leaders/"><i
+                class="fab fa-instagram h-auto text-4xl text-white pl-3 transition duration-700 ease-in-out hover:text-corporate-color-blue  md:text-3xl"></i></a>
+          </div>
+        </div>
+        <div class="flex flex-auto flex-col p-4 pt-8 leading-6 text-white text-center">
+          <h3>Suzuka 涼風</h3>
+          <p class="text-xs mb-4">The Wildcard</p>
+          <p class="text-xs mb-4 w-11/12 mx-auto">Cantante y bailarina de 19 años originaria de Osaka
+            (Japón)</p>
+
+        </div>
+      </div>
+    </article>
+    <article class="flex w-3/12 p-3.5 mb-4 lg:w-2/6 md:w-6/12 sm:w-full">
+      <div
+        class="flex flex-col w-full overflow-hidden bg-black rounded transition duration-500 ease-in-out hover:cursor-pointer transform hover:scale-102">
+        <div class="bg-card-image-flex-b relative overflow-hidden bg-no-repeat bg-center bg-cover md:h-72">
+          <div
+            class="pt-28 pb-28 text-center z-10 bg-hover-card opacity-0 transition duration-700 ease-in-out hover:opacity-100 md:absolute md:bottom-0 md:w-full md:opacity-100 md:bg-social-media md:pb-3 md:pt-3 md:duration-0">
+            <a href="https://twitter.com/suzuka3sister"><i
+                class="fab fa-twitter h-auto text-4xl text-white pr-3 transition duration-700 ease-in-out hover:text-corporate-color-blue md:text-3xl"></i></a>
+            <a href="https://www.instagram.com/suzuka_leaders/"><i
+                class="fab fa-instagram h-auto text-4xl text-white pl-3 transition duration-700 ease-in-out  hover:text-corporate-color-blue  md:text-3xl"></i></a>
+          </div>
+        </div>
+        <div class="flex flex-auto flex-col p-4 pt-8 leading-6 text-white text-center">
+          <h3>Mizyu 水子</h3>
+          <p class="text-xs mb-4">The Sleeping Kitten</p>
+          <p class="text-xs mb-4 w-11/12 mx-auto">Cantante y bailarina de 22 años originaria de Tokyo
+            (Japón)</p>
+        </div>
+      </div>
+
+    </article>
+    <article class="flex w-3/12 p-3.5 mb-4 lg:w-2/6 md:w-6/12 sm:w-full">
+      <div
+        class="flex flex-col w-full overflow-hidden bg-black rounded transition duration-500 ease-in-out hover:cursor-pointer transform hover:scale-102">
+        <div class="bg-card-image-flex-c relative overflow-hidden bg-no-repeat bg-center bg-cover md:h-72">
+          <div
+            class="pt-28 pb-28 text-center z-10 bg-hover-card opacity-0 transition duration-700 ease-in-out hover:opacity-100 md:absolute md:bottom-0 md:w-full md:opacity-100 md:bg-social-media md:pb-3 md:pt-3 md:duration-0">
+            <a href="https://twitter.com/suzuka3sister"><i
+                class="fab fa-twitter h-auto text-4xl text-white pr-3 transition duration-700 ease-in-out hover:text-corporate-color-blue md:text-3xl"></i></a>
+            <a href="https://www.instagram.com/suzuka_leaders/"><i
+                class="fab fa-instagram h-auto text-4xl text-white pl-3 transition duration-700 ease-in-out  hover:text-corporate-color-blue  md:text-3xl"></i></a>
+          </div>
+        </div>
+        <div class="flex flex-auto flex-col p-4 pt-8 leading-6 text-white text-center">
+          <h3>Kanon 漢音</h3>
+          <p class="text-xs mb-4">The Graceful One</p>
+          <p class="text-xs mb-4 w-11/12 mx-auto">Cantante y bailarina de 19 años originaria de Gunma
+            (Japón)</p>
+        </div>
+      </div>
+    </article>
+    <article class="flex w-3/12 p-3.5 mb-4 lg:w-2/6 md:w-6/12 sm:w-full">
+      <div
+        class="flex flex-col w-full overflow-hidden bg-black rounded transition duration-500 ease-in-out hover:cursor-pointer transform hover:scale-102">
+        <div class="bg-card-image-flex-d relative overflow-hidden bg-no-repeat bg-center bg-cover md:h-72">
+          <div
+            class="pt-28 pb-28 text-center z-10 bg-hover-card opacity-0 transition duration-700 ease-in-out hover:opacity-100 md:absolute md:bottom-0 md:w-full md:opacity-100 md:bg-social-media md:pb-3 md:pt-3 md:duration-0">
+            <a href="https://twitter.com/suzuka3sister"><i
+                class="fab fa-twitter h-auto text-4xl text-white pr-3 transition duration-700 ease-in-out hover:text-corporate-color-blue md:text-3xl"></i></a>
+            <a href="https://www.instagram.com/suzuka_leaders/"><i
+                class="fab fa-instagram h-auto text-4xl text-white pl-3 transition duration-700 ease-in-out  hover:text-corporate-color-blue  md:text-3xl"></i></a>
+          </div>
+        </div>
+        <div class="flex flex-auto flex-col p-4 pt-8 leading-6 text-white text-center">
+          <h3>Rin 凜</h3>
+          <p class="text-xs mb-4">Nice and Funky</p>
+          <p class="text-xs mb-4 w-11/12 mx-auto">Cantante y bailarina de 20 años originaria de Saitama
+            (Japón)</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="flex w-3/12 p-3.5 mb-4 lg:w-2/6 md:w-6/12 sm:w-full">
+      <div
+        class="flex flex-col w-full overflow-hidden bg-black rounded transition duration-500 ease-in-out hover:cursor-pointer transform hover:scale-102">
+        <div class="bg-card-image-flex-e relative overflow-hidden bg-no-repeat bg-center bg-cover md:h-72">
+          <div
+            class="pt-28 pb-28 text-center z-10 bg-hover-card opacity-0 transition duration-700 ease-in-out hover:opacity-100 md:absolute md:bottom-0 md:w-full md:opacity-100 md:bg-social-media md:pb-3 md:pt-3 md:duration-0">
+            <a href="https://twitter.com/suzuka3sister"><i
+                class="fab fa-twitter h-auto text-4xl text-white pr-3 transition duration-700 ease-in-out hover:text-corporate-color-blue md:text-3xl"></i></a>
+            <a href="https://www.instagram.com/suzuka_leaders/"><i
+                class="fab fa-instagram h-auto text-4xl text-white pl-3 transition duration-700 ease-in-out  hover:text-corporate-color-blue  md:text-3xl"></i></a>
+          </div>
+        </div>
+        <div class="flex flex-auto flex-col p-4 pt-8 leading-6 text-white text-center">
+          <h3>Junko 純子</h3>
+          <p class="text-xs mb-4">The Lazy Bear</p>
+          <p class="text-xs mb-4 w-11/12 mx-auto">Cantante y bailarina de 18 años originaria de Tokyo
+            (Japón)</p>
+
+        </div>
+      </div>
+    </article>
+    <article class="cards-flex flex w-3/12 p-3.5 mb-4 lg:w-2/6 md:w-6/12 sm:w-full">
+      <div
+        class="flex flex-col w-full overflow-hidden bg-black rounded transition duration-500 ease-in-out hover:cursor-pointer transform hover:scale-102">
+        <div class="bg-card-image-flex-f relative overflow-hidden bg-top bg-no-repeat bg-cover md:h-72">
+          <div
+            class="pt-28 pb-28 text-center z-10 bg-hover-card opacity-0 transition duration-700 ease-in-out hover:opacity-100 md:absolute md:bottom-0 md:w-full md:opacity-100 md:bg-social-media md:pb-3 md:pt-3 md:duration-0">
+            <a href="https://twitter.com/suzuka3sister"><i
+                class="fab fa-twitter h-auto text-4xl text-white pr-3 transition duration-700 ease-in-out hover:text-corporate-color-blue md:text-3xl"></i></a>
+            <a href="https://www.instagram.com/suzuka_leaders/"><i
+                class="fab fa-instagram h-auto text-4xl text-white pl-3 transition duration-700 ease-in-out  hover:text-corporate-color-blue  md:text-3xl"></i></a>
+          </div>
+        </div>
+        <div class="flex flex-auto flex-col p-4 pt-8 leading-6 text-white text-center">
+          <h3>Mizyu 水子</h3>
+          <p class="text-xs mb-4">The Sweetie</p>
+          <p class="text-xs mb-4 w-11/12 mx-auto">Cantante y bailarina de 23 años originaria de Osaka
+            (Japón)</p>
+        </div>
+      </div>
+    </article>
+    <article class="flex w-3/12 p-3.5 mb-4 lg:w-2/6 md:w-6/12 sm:w-full">
+      <div
+        class="flex flex-col w-full overflow-hidden bg-black rounded transition duration-500 ease-in-out hover:cursor-pointer transform hover:scale-102">
+        <div class="bg-card-image-flex-g relative overflow-hidden bg-no-repeat bg-center bg-cover md:h-72">
+          <div
+            class="pt-28 pb-28 text-center z-10 bg-hover-card opacity-0 transition duration-700 ease-in-out hover:opacity-100 md:absolute md:bottom-0 md:w-full md:opacity-100 md:bg-social-media md:pb-3 md:pt-3 md:duration-0">
+            <a href="https://twitter.com/suzuka3sister"><i
+                class="fab fa-twitter h-auto text-4xl text-white pr-3 transition duration-700 ease-in-out hover:text-corporate-color-blue md:text-3xl"></i></a>
+            <a href="https://www.instagram.com/suzuka_leaders/"><i
+                class="fab fa-instagram h-auto text-4xl text-white pl-3 transition duration-700 ease-in-out  hover:text-corporate-color-blue  md:text-3xl"></i></a>
+          </div>
+        </div>
+        <div class="flex flex-auto flex-col p-4 pt-8 leading-6 text-white text-center">
+          <h3>Kanon 漢音</h3>
+          <p class="text-xs mb-4">Happy Pumpkin</p>
+          <p class="text-xs mb-4 w-11/12 mx-auto">Cantante y bailarina de 23 años originaria de Saitama
+            (Japón)</p>
+        </div>
+      </div>
+    </article>
+    <article class="flex w-3/12 p-3.5 mb-4 lg:w-2/6 md:w-6/12 sm:w-full">
+      <div
+        class="flex flex-col w-full overflow-hidden bg-black rounded transition duration-500 ease-in-out hover:cursor-pointer transform hover:scale-102">
+        <div class="bg-card-image-flex-h relative overflow-hidden bg-no-repeat bg-center bg-cover md:h-72">
+          <div
+            class="pt-28 pb-28 text-center z-10 bg-hover-card opacity-0 transition duration-700 ease-in-out hover:opacity-100 md:absolute md:bottom-0 md:w-full md:opacity-100 md:bg-social-media md:pb-3 md:pt-3 md:duration-0">
+            <a href="https://twitter.com/suzuka3sister"><i
+                class="fab fa-twitter h-auto text-4xl text-white pr-3 transition duration-700 ease-in-out hover:text-corporate-color-blue md:text-3xl"></i></a>
+            <a href="https://www.instagram.com/suzuka_leaders/"><i
+                class="fab fa-instagram h-auto text-4xl text-white pl-3 transition duration-700 ease-in-out  hover:text-corporate-color-blue  md:text-3xl"></i></a>
+          </div>
+        </div>
+        <div class="flex flex-auto flex-col p-4 pt-8 leading-6 text-white text-center">
+          <h3>Rin 凜</h3>
+          <p class="text-xs mb-4">The White Bunny</p>
+          <p class="text-xs mb-4 w-11/12 mx-auto">Cantante y bailarina de 19 años originaria de Gunma
+            (Japón)</p>
+        </div>
+      </div>
+    </article>
+  </section>
+  <!-- footer -->
+  <footer class="relative z-10 w-screen pt-6 pb-6 text-white bg-black">
+    <div class="flex w-11/12 m-auto lg:block">
+      <div class="w-1/5  m-auto lg:flex lg:items-center lg:justify-center lg:w-full">
+        <a href="index.html">
+          <p
+            class="relative z-10 pr-3.5  text-white text-base hover:opacity-50 transition duration-500  lg:pt-4 lg:pb-6 lg:pl-3.5">
+            新しい学校のリーダーズ</p>
+        </a>
+      </div>
+      <div class="w-3/5 m-auto items-center lg:flex lg:justify-center lg:w-full lg:pb-2">
+        <ul class="text-center">
+          <li class="inline-block"><a href="#" class="footer-link">Inicio</a><span
+              class="ml-2.5 mr-1.5 text-white">|</span> </li>
+          <li class="inline-block"><a href="#" class="footer-link">Noticias</a><span
+              class="ml-2.5 mr-1.5 text-white">|</span> </li>
+          <li class="inline-block"><a href="#" class="footer-link">Discografía</a><span
+              class="ml-2.5 mr-1.5 text-white">|</span> </li>
+          <li class="inline-block"><a href="#" class="footer-link">Sobre nosotras</a><span
+              class="ml-2.5 mr-1.5 text-white">|</span> </li>
+          <li class="inline-block"><a href="#" class="footer-link">Contacto</a><span class="ml-2.5"></span></li>
+        </ul>
+      </div>
+
+      <div class="flex w-1/5  m-auto lg:items-center lg:justify-center lg:w-full lg:pt-4 lg:pb-4">
+        <ul class="flex ml-auto lg:mr-auto">
+          <li><a href="#" class="mr-3 text-1xl footer-link"><i class="fab fa-google-plus-g"></i></a></li>
+          <li><a href="#" class="mx-3 text-1xl footer-link"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" class="ml-3 text-1xl footer-link"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
+</html>
