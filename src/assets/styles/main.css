@@ -53,16 +53,19 @@
   }
 
   body{
-    @apply font-sans text-base leading-6 font-normal;
+    @apply font-sans text-md leading-6 font-normal;
   }
+
   h2{
-    @apply w-full mb-4 text-1xl sm:text-lg;
+    @apply w-full mb-4 text-3xl font-semibold sm:text-4xl;
   }
+
   h3{
-    @apply mb-2.5 text-2xl text-white;
+    @apply mb-2.5 text-4xl text-white;
   }
+
   hr{
-    @apply w-full mt-10 mb-10 h-0.75 bg-hr border-0;
+    @apply w-full mt-10 mb-10 h-0.5 bg-gray-200 border-0;
   }
 }
 
@@ -85,11 +88,11 @@
   }
 
   .menu-list{
-    @apply  flex flex-col pb-5 pl-11 my-6 text-xxs leading-6 uppercase border-b-2 border-gray-600 border-solid sm:pl-7;
+    @apply  flex flex-col pb-5 pl-11 my-6 text-2xs leading-6 uppercase border-b-2 border-gray-600 border-solid sm:pl-7;
   }
 
   .menu-link{
-    @apply  text-white text-base py-1 px-2 hover:text-corporate-color-blue sm:text-xxs;
+    @apply  text-white text-md py-1 px-2 hover:text-blue sm:text-2xs;
   }
 
   .carrousel-list{
@@ -97,7 +100,7 @@
   }
 
   .carrousel-paragraph{
-    @apply absolute bg-black text-white w-3/12 text-sm p-7 right-11 bottom-14 lg:w-4/12 lg:text-base md:right-0 md:bottom-0 md:w-auto md:text-xs md:text-center md:opacity-80 md:mb-0 md:pt-8 md:pb-24 md:px-8;
+    @apply absolute bg-black text-white w-3/12 text-lg p-7 right-11 bottom-14 lg:w-4/12 lg:text-md md:right-0 md:bottom-0 md:w-auto md:text-sm md:text-center md:opacity-80 md:mb-0 md:pt-8 md:pb-24 md:px-8;
   }
 
   .carrousel-label{
@@ -116,6 +119,10 @@
     @apply -left-4/2;
   }
   
+  .card-social-media{
+    @apply h-auto text-6xl text-white  transition duration-700 ease-in-out hover:text-blue md:text-5xl;
+  }
+
   #radio-1:checked ~ .slides-navigation label#dotForRadio-1,
   #radio-2:checked ~ .slides-navigation label#dotForRadio-2,
   #radio-3:checked ~ .slides-navigation label#dotForRadio-3 {
@@ -125,11 +132,11 @@
   .notice-list{
     @apply pl-1 list-circle;
   }
+
   .footer-link{
-    @apply hover:text-corporate-color-blue transition duration-500;
+    @apply hover:text-blue transition duration-500;
   }
 } 
 
 @tailwind utilities;
 @import "npm:@fortawesome/fontawesome-free/css/all.css";
-
