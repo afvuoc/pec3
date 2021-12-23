@@ -111,5 +111,5 @@ module.exports = {
     },
   },
   plugins: [],
-  purge: ["./src/*/.html", "./src/*/.js"],
+  purge: ["./src/**/*.html", "./src/**/*.js"]
 }

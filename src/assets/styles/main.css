@@ -92,8 +92,6 @@
     @apply  text-white text-base py-1 px-2 hover:text-corporate-color-blue sm:text-xxs;
   }
 
-
-
   .carrousel-list{
     @apply relative float-left;
   }
@@ -117,7 +115,7 @@
   #radio-3:checked ~ .slides {
     @apply -left-4/2;
   }
-
+  
   #radio-1:checked ~ .slides-navigation label#dotForRadio-1,
   #radio-2:checked ~ .slides-navigation label#dotForRadio-2,
   #radio-3:checked ~ .slides-navigation label#dotForRadio-3 {
@@ -134,5 +132,4 @@
 
 @tailwind utilities;
 @import "npm:@fortawesome/fontawesome-free/css/all.css";
-
 
