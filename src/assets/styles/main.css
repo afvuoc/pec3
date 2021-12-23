@@ -57,11 +57,11 @@
   }
 
   h2{
-    @apply w-full mb-4 text-3xl font-semibold sm:text-4xl;
+    @apply mb-2.5 text-4xl text-white;
   }
 
   h3{
-    @apply mb-2.5 text-4xl text-white;
+    @apply w-full mb-4 text-3xl font-semibold sm:text-4xl;
   }
 
   hr{

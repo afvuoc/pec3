@@ -5,6 +5,7 @@ module.exports = {
     backgroundColor: {
       'black': 'rgb(0, 0, 0)',
       'black-a-6': 'rgba(0, 0, 0, .6)',
+      'black-a-75': 'rgba(0, 0, 0, .75)',
       'black-a-9': 'rgba(0, 0, 0, .9)',
       'white': 'rgb(255,255,255)',
       'white-a-2': 'rgba(255, 255, 255, .2)',
