@@ -71,15 +71,7 @@
   .menu-ul.show {
     @apply left-0 bg-black transition-all duration-300 ease-linear;
   }
-
-  .menu-list{
-    @apply  flex flex-col pb-5 pl-11 my-6 text-xxs leading-6 uppercase border-b-2 border-gray-600 border-solid sm:pl-7;
-  }
-
-  .menu-link{
-    @apply  text-white text-base py-1 px-2 hover:text-corporate-color-blue sm:text-xxs;
-  }
-
+  
   .br-1.animation {
     @apply transition duration-500 ease-in-out transform -translate-x-1 translate-y-1.5;
   }
@@ -91,6 +83,16 @@
   .br-3.animation {
     @apply  transition duration-500 ease-in-out transform -translate-x-1 -translate-y-1.5;
   }
+
+  .menu-list{
+    @apply  flex flex-col pb-5 pl-11 my-6 text-xxs leading-6 uppercase border-b-2 border-gray-600 border-solid sm:pl-7;
+  }
+
+  .menu-link{
+    @apply  text-white text-base py-1 px-2 hover:text-corporate-color-blue sm:text-xxs;
+  }
+
+
 
   .carrousel-list{
     @apply relative float-left;
@@ -130,5 +132,7 @@
   }
 } 
 
-@import "npm:@fortawesome/fontawesome-free/css/all.css";
 @tailwind utilities;
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
+
+
