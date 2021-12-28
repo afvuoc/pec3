@@ -1,15 +1,3 @@
-/**
- * Import dependencies from node_modules
- * see commented examples below
- */
-
-// import 'some-node-module';
-// import SomeModule from 'some-node-module';
-
-/**
- * Write any other JavaScript below
- */
-
 /*responsive menu*/
 const hamburguer = document.querySelector('.menu-ham');
 const links = document.querySelector('ul');
@@ -20,4 +8,3 @@ hamburguer.addEventListener('click', function () {
         child.classList.toggle('animation');
     });
 });
-

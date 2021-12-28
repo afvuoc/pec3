@@ -53,15 +53,15 @@
   }
 
   body{
-    @apply font-sans text-md leading-6 font-normal;
+    @apply font-sans text-lg leading-6 font-normal;
   }
 
   h2{
-    @apply mb-2.5 text-4xl text-white;
+    @apply mb-2.5 text-4xl text-white font-semibold;
   }
 
   h3{
-    @apply w-full mb-4 text-3xl font-semibold sm:text-4xl;
+    @apply w-full mb-4 text-3xl font-semibold sm:text-2xl;
   }
 
   hr{
@@ -100,7 +100,7 @@
   }
 
   .carrousel-paragraph{
-    @apply absolute bg-black text-white w-3/12 text-lg p-7 right-11 bottom-14 lg:w-4/12 lg:text-md md:right-0 md:bottom-0 md:w-auto md:text-sm md:text-center md:opacity-80 md:mb-0 md:pt-8 md:pb-24 md:px-8;
+    @apply absolute bg-black text-white w-3/12 text-xl p-7 right-11 bottom-14 lg:w-4/12 lg:text-lg md:right-0 md:bottom-0 md:w-auto md:text-sm md:text-center md:opacity-80 md:mb-0 md:pt-8 md:pb-24 md:px-8;
   }
 
   .carrousel-label{
@@ -118,10 +118,6 @@
   #radio-3:checked ~ .slides {
     @apply -left-4/2;
   }
-  
-  .card-social-media{
-    @apply h-auto text-6xl text-white  transition duration-700 ease-in-out hover:text-blue md:text-5xl;
-  }
 
   #radio-1:checked ~ .slides-navigation label#dotForRadio-1,
   #radio-2:checked ~ .slides-navigation label#dotForRadio-2,
@@ -130,7 +126,11 @@
   }
 
   .notice-list{
-    @apply pl-1 list-circle;
+    @apply pl-1 list-circle lg:text-md md:text-lg sm:text-sm;
+  }
+
+  .card-social-media{
+    @apply h-auto text-6xl text-white  transition duration-700 ease-in-out hover:text-blue md:text-5xl;
   }
 
   .footer-link{
@@ -139,4 +139,3 @@
 } 
 
 @tailwind utilities;
-@import "npm:@fortawesome/fontawesome-free/css/all.css";

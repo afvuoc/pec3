@@ -30,7 +30,7 @@ module.exports = {
       'card-image-f': "url('/src/assets/images/atarashii-gakko-member-info-6.jpg')",
       'card-image-g': "url('/src/assets/images/atarashii-gakko-member-info-7.jpg')",
       'card-image-h': "url('/src/assets/images/atarashii-gakko-member-info-8.jpg')",
-      'index-image': "url('/src/assets/images/atarashii-gakko-background.jpg')", 
+      'index-image': "url('/src/assets/images/atarashii-gakko-background.jpg')",
     },
     fontSize: {
       '2xs': '0.88rem',
